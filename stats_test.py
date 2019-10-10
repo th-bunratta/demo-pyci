@@ -1,6 +1,7 @@
 from unittest import TestCase
 from stats import variance
 
+
 class StatsTest(TestCase):
 
     def test_variance_typical_values(self):
@@ -16,8 +17,8 @@ class StatsTest(TestCase):
         with self.assertRaises(ValueError):
             var = variance([])
 
+
 if __name__ == '__main__':
     import unittest
     unittest.main(verbosity=1)
 
-    
